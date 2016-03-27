@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DBTEST1.iml" filepath="$PROJECT_DIR$/DBTEST1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.skp.Tmap_1.0.36/com.skp.Tmap_1.0.36.iml" filepath="$PROJECT_DIR$/com.skp.Tmap_1.0.36/com.skp.Tmap_1.0.36.iml" />
+    </modules>
+  </component>
+</project>

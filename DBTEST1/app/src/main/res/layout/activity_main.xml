@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/linearLayout2"
+        android:background="#ff778899"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:id="@+id/linearLayout3"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/edtid"
+            android:layout_width="0sp"
+            android:layout_weight="1.60"
+            android:layout_height="wrap_content"
+            android:hint="  ID"
+            android:layout_gravity="center"
+            android:background ="@null"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="56dp"
+        android:background="#ff778899"
+        android:id="@+id/linearLayout2"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_alignEnd="@+id/linearLayout3">
+
+        <EditText
+            android:id="@+id/edtpass"
+            android:layout_width="0sp"
+            android:layout_weight="2.3"
+            android:password="true"
+            android:hint=" PASSWORD"
+            android:layout_height="wrap_content"
+            android:background ="@null"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="122dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="318dp"
+            android:layout_height="61dp"
+            android:background="@drawable/loginpush"
+            android:onClick="mOnClick"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="318dp"
+            android:layout_height="61dp"
+            android:onClick="mOnClick"
+            android:background="@drawable/joinpush"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignStart="@+id/btnlogin" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Not a member? sign up now."
+        android:id="@+id/textView"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff0ffff"/>
+
+
+</RelativeLayout>

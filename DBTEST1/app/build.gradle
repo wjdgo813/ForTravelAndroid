@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    //useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0"
+    defaultConfig {
+        applicationId "com.example.haehyeon.dbtest"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+    maven {
+        url "https://raw.github.com/embarkmobile/zxing-android-minimal/mvn-repo/maven-repository/"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':com.skp.Tmap_1.0.36')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.google.zxing:core:2.2'
+    compile 'com.embarkmobile:zxing-android-minimal:1.2.1@aar'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.android.support:design:22.2.1'
+}

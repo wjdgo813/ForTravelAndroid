@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DBTEST</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="result_succeeded">success!!</string>
+    <string name="title_activity_qr">QrActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_shared_gps">SharedGps</string>
+    <string name="title_activity_read_frd_gps">ReadFrdGps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_menu_tab">MenuTabActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_frag_qr">FragQrActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_frag_temp">FragTempActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_friend_gps">FriendGPS</string>
+    <string name="title_activity_shared_gps_frag">SharedGpsFrag</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tmp">tmp</string>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.skp.Tmap.TMapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="517dp"
+        android:layout_gravity="center_horizontal|bottom">
+    </com.skp.Tmap.TMapView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal|top"
+            android:id="@+id/relativeLayout"
+
+            android:background="@drawable/background">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/searchEdit"
+                android:hint="Searching place"
+                android:layout_gravity="left|top"
+                android:background ="@null"
+                android:layout_alignParentStart="true"
+                android:layout_alignBottom="@+id/Search"
+                />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Search"
+                android:background="@drawable/search"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="516dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <ListView
+            android:id="@+id/placeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_material_light"
+
+            >
+
+        </ListView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trackingBtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isAbleSearching"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_above="@+id/trackingBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/trackingBtn" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+
+                android:id="@+id/button2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/friendRequestBtn"
+                style="?android:attr/buttonStyleSmall"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/friendList"
+                android:background="@drawable/friendlist"
+                style="?android:attr/buttonStyleSmall" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/btn_zoom_out"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
